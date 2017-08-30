@@ -9,6 +9,21 @@
 -
 
 -------------------------------------------------------------*/
+#timeline{
+  padding-top:40px;
+}
+
+@media only screen and (max-width: 768px){
+ 
+  #about .about-text{
+    padding-top:40px;
+    padding-left: 10px;
+
+  }
+
+}
+
+
 @media only screen and (max-width: 768px) {
     #timelineimage {
         background-color: lightblue;
@@ -115,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center fixed;
+  background: url(../img/final_3.jpg) top center fixed;
   background-size: cover;
 }
 
@@ -174,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .actions a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -509,7 +524,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: #fff;
   padding: 80px 0;
 }
 
@@ -518,7 +532,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-content {
-  background: #fff;
 }
 
 #about .about-title {
@@ -531,8 +544,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 26px;
 }
 
+@media screen and (max-width: 768px){
+  #about .about-text:last-child {
+  margin-bottom: 0;
+  padding-top: 20px;
+
+}
+}
 #about .about-text:last-child {
   margin-bottom: 0;
+
 }
 
 iframe{
@@ -543,10 +564,46 @@ iframe{
 
 /* Services Section
 --------------------------------*/
+
+
+#services .actions a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+
+#services .btn-get-started {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+    color: #fff;
+}
+
 #services {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 40px 0 60px 0;
+}
+
+.service{
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/3.jpg") fixed center center;
+  background-size: cover;
+  padding: 40px 0 60px 0;
+}
+
+
+
+#about{
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 40px 0 60px 0;
 }
 
 #services .service-item {
@@ -591,10 +648,47 @@ iframe{
   line-height: 24px;
 }
 
+
+ /*service1 section*/
+
+
+
+
+
+
+#services1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 40px 0 60px 0;
+}
+
+/*timeline*/
+#timeline {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 40px 0 60px 0;
+}
+
+#testimonials{
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 40px 0 60px 0;
+}
+
+#team{
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 40px 0 60px 0;
+}
+
+
+
+
+
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/services-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -627,6 +721,9 @@ iframe{
   margin: 10px;
   border: 2px solid #fff;
   color: #fff;
+
+
+
 }
 
 #subscribe .subscribe-btn:hover {
@@ -703,7 +800,7 @@ iframe{
 --------------------------------*/
 
 #testimonials {
-  background: #f6f6f6;
+ 
   padding: 40px 0;
 }
 
@@ -758,7 +855,6 @@ iframe{
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
   padding: 80px 0 60px 0;
 }
 
